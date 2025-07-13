@@ -50,7 +50,7 @@ const startServer = async () => {
     app.get('/', (req, res) => {
       res.status(200).json({
         success: true,
-        message: 'Chào mừng đến với Poll App!',
+        message: 'Chào mừng đến với Review Book!',
         endpoints: {
           health: '/api/health',
           auth: '/api/auth',

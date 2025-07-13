@@ -30,7 +30,7 @@ const startServer = async () => {
     app.set('views', path.join(process.cwd(), 'views'));
 
     // Body parser
-    app.use(express.json({ limit: '10kb' })); // Giới hạn kích thước body
+    app.use(express.json({ limit: '100kb' })); // Giới hạn kích thước body
     app.use(express.urlencoded({ extended: true }));
 
     // Middleware bảo mật
